@@ -81,9 +81,9 @@ displayCat();
 
 // Tambahkan teks setelah gambar cat-heart ditampilkan
 var textContainer = document.createElement('div');
-textContainer.innerHTML = "<h2>YAYY! Thankyou for being my valentine ❤️</h2>";
-textContainer.style.marginTop = '20px';
-textContainer.style.color = '#333';
+textContainer.innerHTML = "<h2> YAYY! Thankyou for being my valentine ❤️</h2>";
+textContainer.style.marginTop = '50px';
+textContainer.style.color = 'black';
 textContainer.style.fontFamily = 'Arial, sans-serif';
 textContainer.style.animation = 'fadeIn 2s';
 
