@@ -79,14 +79,27 @@ function displayCatHeart() {
 // Display the cat.gif initially
 displayCat();
 
-// Tambahkan teks setelah gambar cat-heart ditampilkan
-var textContainer = document.createElement('div');
-textContainer.innerHTML = "<h2> YAYY! Thankyou for being my valentine ❤️</h2>";
-textContainer.style.marginTop = '50px';
-textContainer.style.color = 'black';
-textContainer.style.fontFamily = 'Arial, sans-serif';
-textContainer.style.animation = 'fadeIn 2s';
+function displayCatHeart() {
+    // Clear existing content in the image container
+    document.getElementById('image-container').innerHTML = '';
+    var imageContainer = document.getElementById('image-container');
 
-// Tambahkan teks ke dalam image container
-imageContainer.appendChild(catHeartImage); 
-imageContainer.appendChild += "<h2 style='color: red;'>YAYY! Thankyou for being my valentine ❤️</h2>";
+    var catHeartImage = new Image();
+    catHeartImage.src = 'cat-heart.gif'; // Pastikan file ini ada di folder yang sama
+    catHeartImage.alt = 'Cat Heart';
+
+    catHeartImage.onload = function() {
+        imageContainer.appendChild(catHeartImage);
+        document.getElementById('options').style.display = 'none';
+
+        // === Tambahkan Teks Setelah Gambar cat-heart Ditampilkan ===
+        var textContainer = document.createElement('div');
+        textContainer.innerHTML = "<h2>YAYY! Thank you for being my valentine ❤️</h2>";
+        textContainer.style.marginTop = '20px';
+        textContainer.style.animation = 'fadeIn 2s';
+        textContainer.style.display = 'block';
+
+        // Tambahkan teks ke dalam image-container
+        imageContainer.appendChild(textContainer);
+    };
+}
