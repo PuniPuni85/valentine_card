@@ -87,4 +87,5 @@ textContainer.style.color = '#333';
 textContainer.style.fontFamily = 'Arial, sans-serif';
 textContainer.style.animation = 'fadeIn 2s';
 
-document.getElementById('image-container').appendChild(textContainer);
+// Tambahkan teks ke dalam image container
+imageContainer.appendChild(textContainer); 
