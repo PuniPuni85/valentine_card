@@ -88,4 +88,5 @@ textContainer.style.fontFamily = 'Arial, sans-serif';
 textContainer.style.animation = 'fadeIn 2s';
 
 // Tambahkan teks ke dalam image container
-imageContainer.appendChild(textContainer); 
+imageContainer.appendChild(catHeartImage); 
+imageContainer.appendChild += "<h2 style='color: red;'>YAYY! Thankyou for being my valentine ❤️</h2>";
